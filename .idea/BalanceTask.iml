@@ -50,11 +50,9 @@
     <orderEntry type="library" scope="PROVIDED" name="debug (v1.8.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.5.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.12.0, RVM: ruby-3.2.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="et-orbi (v1.2.7, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="factory_bot (v6.2.1, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="factory_bot_rails (v6.2.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="faker (v3.2.1, RVM: ruby-3.2.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="fugit (v1.8.1, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v1.2.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.14.1, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="io-console (v0.6.0, RVM: ruby-3.2.2) [gem]" level="application" />
@@ -78,7 +76,6 @@
     <orderEntry type="library" scope="PROVIDED" name="pg (v1.5.4, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="psych (v5.1.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="puma (v5.6.7, RVM: ruby-3.2.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="raabro (v1.4.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="racc (v1.7.1, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v2.2.8, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v2.1.0, RVM: ruby-3.2.2) [gem]" level="application" />
@@ -103,12 +100,9 @@
     <orderEntry type="library" scope="PROVIDED" name="rubocop-performance (v1.19.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-rails (v2.20.2, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-progressbar (v1.13.0, RVM: ruby-3.2.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rufus-scheduler (v3.9.1, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sidekiq (v7.1.2, RVM: ruby-3.2.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sidekiq-scheduler (v5.0.3, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="stringio (v3.0.8, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v1.2.2, RVM: ruby-3.2.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="tilt (v2.2.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="timeout (v0.4.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v2.0.6, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="unicode-display_width (v2.4.2, RVM: ruby-3.2.2) [gem]" level="application" />
@@ -158,7 +152,6 @@
         <option value="rspec:view" />
         <option value="scaffold" />
         <option value="scaffold_controller" />
-        <option value="sidekiq:job" />
         <option value="system_test" />
         <option value="task" />
         <option value="test_unit:channel" />
@@ -213,7 +206,6 @@
         <option value="rspec:view" />
         <option value="scaffold" />
         <option value="scaffold_controller" />
-        <option value="sidekiq:job" />
         <option value="system_test" />
         <option value="task" />
         <option value="test_unit:channel" />

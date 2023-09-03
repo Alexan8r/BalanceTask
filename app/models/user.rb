@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   validates :name, :surname, presence: true
+  validates :balance, numericality: {greater_than_or_equal_to: 0}
 
   has_many :events, class_name: 'Event', dependent: :destroy
 

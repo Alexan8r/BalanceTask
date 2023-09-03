@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe EventCreationWorker, type: :worker do
+RSpec.describe EventCreationService do
   describe '#perform' do
     let(:user) { create(:user, balance: 100) }
     let(:params) { { 'user_id' => user.id, 'kind' => 'income', 'name' => 'Salary', 'amount' => 100 } }
@@ -13,7 +13,7 @@ RSpec.describe EventCreationWorker, type: :worker do
 
         expected_transactions.times do
           threads << Thread.new do
-            EventCreationWorker.new(params).perform
+            EventCreationService.new(params).call
           end
         end
 
@@ -34,7 +34,7 @@ RSpec.describe EventCreationWorker, type: :worker do
 
         expected_transactions.times do
           threads << Thread.new do
-            EventCreationWorker.new(params.merge('kind' => 'consumption')).perform
+            EventCreationService.new(params.merge('kind' => 'consumption')).call
           end
         end
 

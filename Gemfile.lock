@@ -75,7 +75,6 @@ GEM
       msgpack (~> 1.2)
     builder (3.2.4)
     concurrent-ruby (1.2.2)
-    connection_pool (2.4.1)
     crass (1.0.6)
     date (3.3.3)
     debug (1.8.0)
@@ -170,8 +169,6 @@ GEM
     rake (13.0.6)
     rdoc (6.5.0)
       psych (>= 4.0.0)
-    redis-client (0.16.0)
-      connection_pool
     regexp_parser (2.8.1)
     reline (0.3.8)
       io-console (~> 0.5)
@@ -215,11 +212,6 @@ GEM
       rack (>= 1.1)
       rubocop (>= 1.33.0, < 2.0)
     ruby-progressbar (1.13.0)
-    sidekiq (7.1.2)
-      concurrent-ruby (< 2)
-      connection_pool (>= 2.3.0)
-      rack (>= 2.2.4)
-      redis-client (>= 0.14.0)
     stringio (3.0.8)
     thor (1.2.2)
     timeout (0.4.0)
@@ -247,7 +239,6 @@ DEPENDENCIES
   rubocop
   rubocop-performance
   rubocop-rails
-  sidekiq (~> 7.1)
   tzinfo-data
 
 RUBY VERSION

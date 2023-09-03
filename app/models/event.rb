@@ -3,6 +3,9 @@ class Event < ApplicationRecord
   validates :kind, inclusion: %w[income consumption]
   validates :amount, numericality: { greater_than: 0 }
 
+  scope :income, -> { where(kind: 'income') }
+  scope :consumption, -> { where(kind: 'consumption') }
+
   belongs_to :user
 end
 

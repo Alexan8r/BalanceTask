@@ -1,5 +1,4 @@
-class EventCreationWorker
-  include Sidekiq::Worker
+class EventCreationService
 
   def initialize(params)
     @user = User.find(params['user_id'])
@@ -8,7 +7,7 @@ class EventCreationWorker
     @amount = params['amount'].to_f
   end
 
-  def perform
+  def call
     return 'invalid amount' unless @amount.positive?
     return 'invalid name' if @name.nil?
 
