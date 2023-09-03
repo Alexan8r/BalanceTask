@@ -1,0 +1,37 @@
+require:
+  - rubocop-performance
+  - rubocop-rails
+
+Performance:
+  Enabled: true
+
+Rails:
+  Enabled: true
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - !ruby/regexp /old_and_unused\.rb$/
+    - !ruby/regexp /.axlsx$/
+    - 'bin/*'
+    - 'config/'
+    - 'config/**/*'
+    - 'db/*'
+    - 'db/**/*'
+    - 'vendor/**/*'
+    - 'node_modules/**/*'
+    - 'spec/**/*'
+    - 'lib/tasks/**/*'
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Rails/UnknownEnv:
+  Environments:
+    - production
+    - development
+    - test
+    - stage
