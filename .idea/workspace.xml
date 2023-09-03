@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="18f908d6-e02b-445d-9e73-b2a93bfcced3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/api/events_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/events_controller.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +87,7 @@
       <recent name="$PROJECT_DIR$/app/jobs" />
     </key>
   </component>
-  <component name="RunManager" selected="RSpec.EventCreationWorker">
+  <component name="RunManager" selected="RSpec.Api::EventsController">
     <configuration name="Api::EventsController" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
       <module name="BalanceTask" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
@@ -341,9 +343,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="RSpec.Api::EventsController" />
         <item itemvalue="RSpec.EventCreationWorker" />
         <item itemvalue="RSpec.EventCreationWorker#perform with wrong params" />
-        <item itemvalue="RSpec.Api::EventsController" />
         <item itemvalue="RSpec.Event is invalid without a kind" />
         <item itemvalue="RSpec.Event" />
       </list>
@@ -358,7 +360,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1693683823509</updated>
-      <workItem from="1693683824534" duration="24800000" />
+      <workItem from="1693683824534" duration="26147000" />
     </task>
     <servers />
   </component>
@@ -550,6 +552,34 @@
                   <option value="$PROJECT_DIR$/spec/factories/user.rb" />
                   <option value="$PROJECT_DIR$/app/models/event.rb" />
                   <option value="$PROJECT_DIR$/app/models/application_record.rb" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="2da683">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/app/controllers/api/events_controller.rb" />
+                  <option value="$PROJECT_DIR$/app/models/user.rb" />
+                  <option value="$PROJECT_DIR$/spec/factories/user.rb" />
+                </list>
+              </option>
+              <option name="id" value="2da683" />
+              <option name="initiateTms" value="1693757604327" />
+              <option name="request" value="class Api::EventsController &lt; Api::BaseController&#10;&#10;  def create&#10;    render json: 'blank_params' if params[:event].blank?&#10;&#10;    user = User.find_by(id: params.dig('event', 'user_id'))&#10;    if user.nil?&#10;      render json: 'User not found', status: :not_found&#10;    else&#10;      result = EventCreationWorker.new(params[:event]).perform&#10;      render json: result&#10;    end&#10;  end&#10;&#10;end&#10;&#10;&#10;AbstractController::DoubleRenderError: Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like &quot;redirect_to(...) and return&quot;.&#10;&#10;" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="The error you're encountering is caused by calling the `render` method multiple times within the same action. In your code, you have a condition where you render `'blank_params'` if `params[:event]` is blank. However, if the condition is not met, you proceed to find the user and render the result of the `EventCreationWorker`. This can lead to the `render` method being called twice.&#10;&#10;To fix this issue, you can use the `return` keyword after calling `render` to exit the action immediately. Here's the updated code:&#10;&#10;```ruby&#10;class Api::EventsController &lt; Api::BaseController&#10;  def create&#10;    if params[:event].blank?&#10;      render json: 'blank_params' and return&#10;    end&#10;&#10;    user = User.find_by(id: params.dig('event', 'user_id'))&#10;    if user.nil?&#10;      render json: 'User not found', status: :not_found and return&#10;    end&#10;&#10;    result = EventCreationWorker.new(params[:event]).perform&#10;    render json: result&#10;  end&#10;end&#10;```&#10;&#10;By adding `and return` after each `render` statement, you ensure that the action is exited immediately after rendering the response. This prevents the `DoubleRenderError` from occurring.&#10;&#10;Make sure to test the updated code to ensure that it functions as expected." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1693757638081" />
+              <option name="usedFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/app/models/user.rb" />
+                  <option value="$PROJECT_DIR$/spec/factories/user.rb" />
+                  <option value="$PROJECT_DIR$/app/controllers/api/events_controller.rb" />
                 </list>
               </option>
             </ChatHistoryModel>
@@ -1332,6 +1362,6 @@
     <SUITE FILE_PATH="coverage/BalanceTask@Event_is_invalid_without_a_kind.rcov" NAME="Event is invalid without a kind Coverage Results" MODIFIED="1693752436705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BalanceTask" />
     <SUITE FILE_PATH="coverage/BalanceTask@EventCreationWorker_perform_with_wrong_params.rcov" NAME="EventCreationWorker#perform with wrong params Coverage Results" MODIFIED="1693754274121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BalanceTask" />
     <SUITE FILE_PATH="coverage/BalanceTask@Event.rcov" NAME="Event Coverage Results" MODIFIED="1693752406526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BalanceTask" />
-    <SUITE FILE_PATH="coverage/BalanceTask@Api__EventsController.rcov" NAME="Api::EventsController Coverage Results" MODIFIED="1693752663862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BalanceTask" />
+    <SUITE FILE_PATH="coverage/BalanceTask@Api__EventsController.rcov" NAME="Api::EventsController Coverage Results" MODIFIED="1693757703718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BalanceTask" />
   </component>
 </project>

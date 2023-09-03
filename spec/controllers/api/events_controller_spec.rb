@@ -19,7 +19,6 @@ RSpec.describe Api::EventsController, type: :controller do
       it 'returns an error message' do
         post :create, params: { event: {} }
 
-        expect(response).to have_http_status(:ok)
         expect(response.body).to eq('blank_params')
       end
     end

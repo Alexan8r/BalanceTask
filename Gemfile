@@ -8,7 +8,6 @@ gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
 gem 'rails', '~> 7.0.7', '>= 7.0.7.2'
 gem 'sidekiq', '~> 7.1'
-gem 'sidekiq-scheduler'
 
 # gem "jbuilder"
 gem 'bootsnap', require: false
