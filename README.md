@@ -20,3 +20,10 @@
 * kind: string, inclusion: %w[income consumption]
 * name: string
 * user_id: reference
+
+### Params for Users/Summary
+* date_from: '2023-01-01'
+* date_to: '2023-01-02'
+* Without_params:
+  + date_from: Date.current - 1.day
+  + date_to: Date.current

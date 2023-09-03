@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18f908d6-e02b-445d-9e73-b2a93bfcced3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/BalanceTask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BalanceTask.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/api/events_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/events_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/event.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/event.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/user_summary_service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/user_summary_service.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/workers/event_creation_worker.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/event_creation_service.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/workers/event_creation_worker_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/services/event_creation_service_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -403,7 +395,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1693683823509</updated>
-      <workItem from="1693683824534" duration="30423000" />
+      <workItem from="1693683824534" duration="31405000" />
     </task>
     <servers />
   </component>
