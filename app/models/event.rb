@@ -1,6 +1,8 @@
 class Event < ApplicationRecord
-  validates :user_id, :name, :amount, presence: true
-  validates :kind, inclusion: %w[income consumption] # доход, расход
+  validates :name, :amount, presence: true
+  validates :kind, inclusion: %w[income consumption]
+  validates :amount, numericality: { greater_than: 0 }
+
   belongs_to :user
 end
 
@@ -10,7 +12,7 @@ end
 #
 #  id         :bigint           not null, primary key
 #  amount     :decimal(16, 2)   not null
-#  date       :datetime
+#  date       :date
 #  kind       :string
 #  name       :string           not null
 #  created_at :datetime         not null

@@ -7,11 +7,16 @@ class Api::UsersController < Api::BaseController
   end
 
   def show
-    render json: @user.events
+    render json: {
+      user: @user,
+      events: @user.events.sort_by(&:date)
+    }
   end
 
   def summary
-    render json: @user
+    events = UserSummaryService.new(@user, params).call
+
+    render json: events
   end
 
   private

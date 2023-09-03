@@ -29,6 +29,12 @@ Style/Documentation:
 Style/FrozenStringLiteralComment:
   Enabled: false
 
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Rails/SkipsModelValidations:
+  Enabled: false
+
 Rails/UnknownEnv:
   Environments:
     - production
