@@ -1,5 +1,4 @@
 class Api::UsersController < Api::BaseController
-
   before_action :set_user, except: :index
 
   def index
@@ -24,5 +23,4 @@ class Api::UsersController < Api::BaseController
   def set_user
     @user = User.find(params[:id])
   end
-
 end

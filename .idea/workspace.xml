@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18f908d6-e02b-445d-9e73-b2a93bfcced3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/spec/services/user_summary_service_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/75ec7919-b6e4-4747-9b22-786fd1290bfd.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/75ec7919-b6e4-4747-9b22-786fd1290bfd/storage_v2/_src_/database/BalanceTask_development.XWTfaQ/schema/public.abK9xQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/api/base_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/base_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/api/events_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/events_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/api/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/users_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/event_creation_service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/event_creation_service.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/user_summary_service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/user_summary_service.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,30 +58,30 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2Ur3MGc9MdHQTgx4zl8I0dyxzMS" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/astepanov/Ruby_mine_projects/BalanceTask",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "ruby.rails.projectView.checked": "true",
-    "ruby.structure.view.model.defaults.configured": "true",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/astepanov/Ruby_mine_projects/BalanceTask&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -382,7 +388,6 @@
         <item itemvalue="RSpec.UserSummaryService" />
         <item itemvalue="RSpec.EventCreationService" />
         <item itemvalue="RSpec.Api::EventsController" />
-        <item itemvalue="RSpec.EventCreationWorker" />
         <item itemvalue="RSpec.EventCreationWorker#perform with wrong params" />
       </list>
     </recent_temporary>
@@ -396,7 +401,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1693683823509</updated>
-      <workItem from="1693683824534" duration="34583000" />
+      <workItem from="1693683824534" duration="34623000" />
+      <workItem from="1693815049213" duration="340000" />
     </task>
     <servers />
   </component>
@@ -1175,6 +1181,38 @@
             </ChatHistoryModel>
           </value>
         </entry>
+        <entry key="d1de6e">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/app/services/user_summary_service.rb" />
+                  <option value="$PROJECT_DIR$/spec/factories/event.rb" />
+                  <option value="$PROJECT_DIR$/app/models/user.rb" />
+                  <option value="$PROJECT_DIR$/app/models/event.rb" />
+                  <option value="$PROJECT_DIR$/spec/factories/user.rb" />
+                </list>
+              </option>
+              <option name="id" value="d1de6e" />
+              <option name="initiateTms" value="1693815300492" />
+              <option name="request" value="Можно ли как-то улучшить этот код?&#10;class UserSummaryService&#10;  def initialize(user, params = {})&#10;    @user = user&#10;    @params = params&#10;&#10;    set_dependencies&#10;  end&#10;&#10;  def call&#10;    {&#10;      beginning_of_period: from_period_balance,&#10;      end_of_period: to_period_balance,&#10;      balance: @user.balance,&#10;      events: @user.events.where(date: @date_from..@date_to)&#10;    }&#10;  end&#10;&#10;  private&#10;&#10;  def from_period_balance&#10;    inc_events = @inc_events.where('date &lt; ?', @date_from).sum(&amp;:amount)&#10;    cons_events = @cons_events.where('date &lt; ?', @date_from).sum(&amp;:amount)&#10;    start_balance + inc_events  - cons_events&#10;  end&#10;&#10;  def to_period_balance&#10;    dates = @date_from..@date_to&#10;    inc_events = @inc_events.where(date: dates).sum(&amp;:amount)&#10;    cons_events = @cons_events.where(date: dates).sum(&amp;:amount)&#10;    from_period_balance + inc_events - cons_events&#10;  end&#10;&#10;  def start_balance&#10;    @user.balance - @inc_events.sum(&amp;:amount) + @cons_events.sum(&amp;:amount)&#10;  end&#10;&#10;  def set_dependencies&#10;    @date_from = @params['date_from'].nil? ? Date.current - 1.day : @params['date_from'].to_date&#10;    @date_to = @params['date_to'].nil? ? Date.current : @params['date_to'].to_date&#10;    events = @user.events&#10;    @cons_events = events.consumption&#10;    @inc_events = events.income&#10;  end&#10;end&#10;" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Ваш код уже хорошо структурирован и понятен, но есть несколько улучшений, которые можно внести:&#10;&#10;1. Использование `sum` с блоком: Вместо использования `sum(&amp;:amount)` можно использовать `sum(:amount)`. Это более явное и эффективное использование метода `sum`.&#10;&#10;2. Использование `merge` для объединения хэшей: Вместо создания отдельных хэшей для `beginning_of_period`, `end_of_period` и `balance`, вы можете использовать метод `merge` для объединения этих значений в один хэш.&#10;&#10;3. Использование `compact` для удаления пустых значений: Если `@params['date_from']` или `@params['date_to']` равны `nil`, вы можете использовать метод `compact` для удаления пустых значений из хэша.&#10;&#10;Вот обновленный код с этими улучшениями:&#10;&#10;```ruby&#10;class UserSummaryService&#10;  def initialize(user, params = {})&#10;    @user = user&#10;    @params = params&#10;&#10;    set_dependencies&#10;  end&#10;&#10;  def call&#10;    {&#10;      beginning_of_period: from_period_balance,&#10;      end_of_period: to_period_balance,&#10;      balance: @user.balance,&#10;      events: @user.events.where(date: @date_from..@date_to)&#10;    }.compact&#10;  end&#10;&#10;  private&#10;&#10;  def from_period_balance&#10;    inc_events = @inc_events.where('date &lt; ?', @date_from).sum(:amount)&#10;    cons_events = @cons_events.where('date &lt; ?', @date_from).sum(:amount)&#10;    start_balance + inc_events - cons_events&#10;  end&#10;&#10;  def to_period_balance&#10;    dates = @date_from..@date_to&#10;    inc_events = @inc_events.where(date: dates).sum(:amount)&#10;    cons_events = @cons_events.where(date: dates).sum(:amount)&#10;    from_period_balance + inc_events - cons_events&#10;  end&#10;&#10;  def start_balance&#10;    @user.balance - @inc_events.sum(:amount) + @cons_events.sum(:amount)&#10;  end&#10;&#10;  def set_dependencies&#10;    @date_from = @params['date_from']&amp;.to_date || Date.current - 1.day&#10;    @date_to = @params['date_to']&amp;.to_date || Date.current&#10;    events = @user.events&#10;    @cons_events = events.consumption&#10;    @inc_events = events.income&#10;  end&#10;end&#10;```&#10;&#10;В этом обновленном коде мы использовали `sum(:amount)` вместо `sum(&amp;:amount)`, объединили значения `beginning_of_period`, `end_of_period` и `balance` в один хэш с помощью метода `compact`, и использовали `&amp;.` для безопасного вызова методов `to_date` на `@params['date_from']` и `@params['date_to']`.&#10;&#10;Пожалуйста, протестируйте обновленный код, чтобы убедиться, что он продолжает работать правильно." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1693815337128" />
+              <option name="usedFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/spec/factories/event.rb" />
+                  <option value="$PROJECT_DIR$/app/models/user.rb" />
+                  <option value="$PROJECT_DIR$/spec/factories/user.rb" />
+                  <option value="$PROJECT_DIR$/app/models/event.rb" />
+                  <option value="$PROJECT_DIR$/app/services/user_summary_service.rb" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
         <entry key="d83a55">
           <value>
             <ChatHistoryModel>
@@ -1595,7 +1633,7 @@
     <SUITE FILE_PATH="coverage/BalanceTask@EventCreationWorker_perform_with_wrong_params.rcov" NAME="EventCreationWorker#perform with wrong params Coverage Results" MODIFIED="1693754274121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BalanceTask" />
     <SUITE FILE_PATH="coverage/BalanceTask@Event.rcov" NAME="Event Coverage Results" MODIFIED="1693752406526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BalanceTask" />
     <SUITE FILE_PATH="coverage/BalanceTask@EventCreationService.rcov" NAME="EventCreationService Coverage Results" MODIFIED="1693760085017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BalanceTask" />
-    <SUITE FILE_PATH="coverage/BalanceTask@UserSummaryService.rcov" NAME="UserSummaryService Coverage Results" MODIFIED="1693814505493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BalanceTask" />
+    <SUITE FILE_PATH="coverage/BalanceTask@UserSummaryService.rcov" NAME="UserSummaryService Coverage Results" MODIFIED="1693815384220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BalanceTask" />
     <SUITE FILE_PATH="coverage/BalanceTask@Api__EventsController.rcov" NAME="Api::EventsController Coverage Results" MODIFIED="1693758410433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BalanceTask" />
   </component>
 </project>

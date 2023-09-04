@@ -11,24 +11,27 @@ class UserSummaryService
       beginning_of_period: from_period_balance,
       end_of_period: to_period_balance,
       balance: @user.balance,
-      events: @user.events.where(date: @date_from..@date_to).order(:date)
+      events: @user.events.where(date: @date_from..@date_to)
     }
   end
 
   private
 
   def from_period_balance
-    start_balance + @inc_events.where('date < ?',
-                                      @date_from).sum(&:amount) - @cons_events.where('date < ?', @date_from).sum(&:amount)
+    inc_events = @inc_events.where('date < ?', @date_from).sum(:amount)
+    cons_events = @cons_events.where('date < ?', @date_from).sum(:amount)
+    start_balance + inc_events  - cons_events
   end
 
   def to_period_balance
     dates = @date_from..@date_to
-    from_period_balance + @inc_events.where(date: dates).sum(&:amount) - @cons_events.where(date: dates).sum(&:amount)
+    inc_events = @inc_events.where(date: dates).sum(:amount)
+    cons_events = @cons_events.where(date: dates).sum(:amount)
+    from_period_balance + inc_events - cons_events
   end
 
   def start_balance
-    @user.balance - @inc_events.sum(&:amount) + @cons_events.sum(&:amount)
+    @user.balance - @inc_events.sum(:amount) + @cons_events.sum(:amount)
   end
 
   def set_dependencies

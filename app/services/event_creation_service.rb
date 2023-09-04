@@ -1,5 +1,4 @@
 class EventCreationService
-
   def initialize(params)
     @user = User.find(params['user_id'])
     @kind = params['kind']
@@ -43,5 +42,4 @@ class EventCreationService
       @user.decrement!(:balance, @amount)
     end
   end
-
 end

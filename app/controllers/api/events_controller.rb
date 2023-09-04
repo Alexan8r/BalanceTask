@@ -1,5 +1,4 @@
 class Api::EventsController < Api::BaseController
-
   def create
     if params[:event].blank?
       render json: 'blank_params', status: :not_found
@@ -10,5 +9,4 @@ class Api::EventsController < Api::BaseController
       render json: result
     end
   end
-
 end
