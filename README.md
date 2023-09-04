@@ -1,4 +1,3 @@
-## You need to run a sidekiq for it to work correctly.
 ### Ruby version - 3.2.2
 ### Rails version - 7.0.7.2
 
@@ -21,7 +20,7 @@
 * name: string
 * user_id: reference
 
-### Params for Users/Summary
+### Params for Users/:id/Summary
 * date_from: '2023-01-01'
 * date_to: '2023-01-02'
 * Without_params:
