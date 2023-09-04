@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18f908d6-e02b-445d-9e73-b2a93bfcced3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/spec/services/user_summary_service_spec.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +87,7 @@
       <recent name="$PROJECT_DIR$/app/jobs" />
     </key>
   </component>
-  <component name="RunManager" selected="RSpec.EventCreationService">
+  <component name="RunManager" selected="RSpec.UserSummaryService">
     <configuration type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
       <module name="BalanceTask" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
@@ -195,42 +196,6 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Event is invalid without a kind" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
-      <module name="BalanceTask" />
-      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" BUNDLE_MODE="AUTO" bundleExecEnabled="true" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" ENABLE_BRANCH_COVERAGE="true" ENABLE_FORKED_COVERAGE="true">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/models/event_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATHS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Event is invalid without a kind" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="LINE_NUMBER_EXAMPLE_IDS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <method v="2" />
-    </configuration>
     <configuration name="EventCreationService" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
       <module name="BalanceTask" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
@@ -292,6 +257,42 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="EventCreationWorker#perform with wrong params" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="LINE_NUMBER_EXAMPLE_IDS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="UserSummaryService" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
+      <module name="BalanceTask" />
+      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" BUNDLE_MODE="AUTO" bundleExecEnabled="true" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" ENABLE_BRANCH_COVERAGE="true" ENABLE_FORKED_COVERAGE="true">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/services/user_summary_service_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATHS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="UserSummaryService" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="LINE_NUMBER_EXAMPLE_IDS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
@@ -378,11 +379,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="RSpec.UserSummaryService" />
         <item itemvalue="RSpec.EventCreationService" />
         <item itemvalue="RSpec.Api::EventsController" />
         <item itemvalue="RSpec.EventCreationWorker" />
         <item itemvalue="RSpec.EventCreationWorker#perform with wrong params" />
-        <item itemvalue="RSpec.Event is invalid without a kind" />
       </list>
     </recent_temporary>
   </component>
@@ -395,7 +396,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1693683823509</updated>
-      <workItem from="1693683824534" duration="31405000" />
+      <workItem from="1693683824534" duration="34583000" />
     </task>
     <servers />
   </component>
@@ -1142,6 +1143,38 @@
             </ChatHistoryModel>
           </value>
         </entry>
+        <entry key="d0528c">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/app/services/user_summary_service.rb" />
+                  <option value="$PROJECT_DIR$/spec/factories/event.rb" />
+                  <option value="$PROJECT_DIR$/app/models/user.rb" />
+                  <option value="$PROJECT_DIR$/app/models/event.rb" />
+                  <option value="$PROJECT_DIR$/spec/factories/user.rb" />
+                </list>
+              </option>
+              <option name="id" value="d0528c" />
+              <option name="initiateTms" value="1693809489691" />
+              <option name="request" value="Напиши тесты для сервиса&#10;&#10;class UserSummaryService&#10;  def initialize(user, params = {})&#10;    @user = user&#10;    @params = params&#10;&#10;    set_dependencies&#10;  end&#10;&#10;  def call&#10;    {&#10;      beginning_of_period: from_period_balance,&#10;      end_of_period: to_period_balance,&#10;      balance: @user.balance,&#10;      events: @user.events.where(date: @date_from..@date_to).order(:date)&#10;    }&#10;  end&#10;&#10;  private&#10;&#10;  def from_period_balance&#10;    start_balance + @inc_events.where('date &lt; ?',&#10;                                      @date_from).sum(&amp;:amount) - @cons_events.where('date &lt; ?', @date_from).sum(&amp;:amount)&#10;  end&#10;&#10;  def to_period_balance&#10;    dates = @date_from..@date_to&#10;    from_period_balance + @inc_events.where(date: dates).sum(&amp;:amount) - @cons_events.where(date: dates).sum(&amp;:amount)&#10;  end&#10;&#10;  def start_balance&#10;    @user.balance - @inc_events.sum(&amp;:amount) + @cons_events.sum(&amp;:amount)&#10;  end&#10;&#10;  def set_dependencies&#10;    @date_from = @params['date_from'].nil? ? Date.current - 1.day : @params['date_from'].to_date&#10;    @date_to = @params['date_to'].nil? ? Date.current : @params['date_to'].to_date&#10;    events = @user.events&#10;    @cons_events = events.consumption&#10;    @inc_events = events.income&#10;  end&#10;end&#10;" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Конечно! Вот примеры тестов для сервиса `UserSummaryService`:&#10;&#10;```ruby&#10;require 'rails_helper'&#10;&#10;RSpec.describe UserSummaryService do&#10;  let(:user) { create(:user) }&#10;  let(:service) { UserSummaryService.new(user) }&#10;&#10;  describe '#call' do&#10;    it 'returns the user summary' do&#10;      event1 = create(:income_event, user: user, amount: 100)&#10;      event2 = create(:consumption_event, user: user, amount: 50)&#10;      event3 = create(:income_event, user: user, amount: 200)&#10;&#10;      summary = service.call&#10;&#10;      expect(summary[:beginning_of_period]).to eq(250) # Replace with the expected value&#10;      expect(summary[:end_of_period]).to eq(550) # Replace with the expected value&#10;      expect(summary[:balance]).to eq(user.balance)&#10;      expect(summary[:events]).to eq([event1, event2, event3])&#10;    end&#10;  end&#10;end&#10;```&#10;&#10;В этом примере мы создаем тестового пользователя и используем сервис `UserSummaryService` для получения сводки пользователя. Затем мы проверяем, что возвращенная сводка соответствует ожидаемым значениям.&#10;&#10;Обратите внимание, что вам нужно заменить `250` и `550` в ожидаемых значениях для `:beginning_of_period` и `:end_of_period` на фактические ожидаемые значения, их можно рассчитать вручную на основе созданных событий.&#10;&#10;Убедитесь, что у вас есть фабрики `:income_event` и `:consumption_event` для создания событий дохода и расхода.&#10;&#10;Запустите тесты, чтобы убедиться, что сервис `UserSummaryService` работает правильно и возвращает ожидаемую сводку пользователя." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1693809514543" />
+              <option name="usedFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/spec/factories/event.rb" />
+                  <option value="$PROJECT_DIR$/app/models/user.rb" />
+                  <option value="$PROJECT_DIR$/spec/factories/user.rb" />
+                  <option value="$PROJECT_DIR$/app/models/event.rb" />
+                  <option value="$PROJECT_DIR$/app/services/user_summary_service.rb" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
         <entry key="d83a55">
           <value>
             <ChatHistoryModel>
@@ -1154,6 +1187,38 @@
               <option name="usedFilesPaths">
                 <list>
                   <option value="$PROJECT_DIR$/app/workers/event_creation_worker.rb" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="d8ba0e">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/app/services/user_summary_service.rb" />
+                  <option value="$PROJECT_DIR$/spec/factories/event.rb" />
+                  <option value="$PROJECT_DIR$/app/models/user.rb" />
+                  <option value="$PROJECT_DIR$/app/models/event.rb" />
+                  <option value="$PROJECT_DIR$/spec/factories/user.rb" />
+                </list>
+              </option>
+              <option name="id" value="d8ba0e" />
+              <option name="initiateTms" value="1693813427969" />
+              <option name="request" value="Совсем не то&#10;Попробуй еще раз &#10;class UserSummaryService&#10;  def initialize(user, params = {})&#10;    @user = user&#10;    @params = params&#10;&#10;    set_dependencies&#10;  end&#10;&#10;  def call&#10;    {&#10;      beginning_of_period: from_period_balance,&#10;      end_of_period: to_period_balance,&#10;      balance: @user.balance,&#10;      events: @user.events.where(date: @date_from..@date_to).order(:date)&#10;    }&#10;  end&#10;&#10;  private&#10;&#10;  def from_period_balance&#10;    start_balance + @inc_events.where('date &lt; ?',&#10;                                      @date_from).sum(&amp;:amount) - @cons_events.where('date &lt; ?', @date_from).sum(&amp;:amount)&#10;  end&#10;&#10;  def to_period_balance&#10;    dates = @date_from..@date_to&#10;    from_period_balance + @inc_events.where(date: dates).sum(&amp;:amount) - @cons_events.where(date: dates).sum(&amp;:amount)&#10;  end&#10;&#10;  def start_balance&#10;    @user.balance - @inc_events.sum(&amp;:amount) + @cons_events.sum(&amp;:amount)&#10;  end&#10;&#10;  def set_dependencies&#10;    @date_from = @params['date_from'].nil? ? Date.current - 1.day : @params['date_from'].to_date&#10;    @date_to = @params['date_to'].nil? ? Date.current : @params['date_to'].to_date&#10;    events = @user.events&#10;    @cons_events = events.consumption&#10;    @inc_events = events.income&#10;  end&#10;end&#10;" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Извините за предыдущую путаницу. Вот примеры тестов для сервиса `UserSummaryService`:&#10;&#10;```ruby&#10;require 'rails_helper'&#10;&#10;RSpec.describe UserSummaryService do&#10;  let(:user) { create(:user) }&#10;  let(:service) { UserSummaryService.new(user) }&#10;&#10;  describe '#call' do&#10;    it 'returns the user summary' do&#10;      event1 = create(:income_event, user: user, amount: 100)&#10;      event2 = create(:consumption_event, user: user, amount: 50)&#10;      event3 = create(:income_event, user: user, amount: 200)&#10;&#10;      summary = service.call&#10;&#10;      expect(summary[:beginning_of_period]).to eq(250) # Replace with the expected value&#10;      expect(summary[:end_of_period]).to eq(550) # Replace with the expected value&#10;      expect(summary[:balance]).to eq(user.balance)&#10;      expect(summary[:events]).to eq([event1, event2, event3])&#10;    end&#10;  end&#10;end&#10;```&#10;&#10;В этом примере мы создаем тестового пользователя и используем сервис `UserSummaryService` для получения сводки пользователя. Затем мы проверяем, что возвращенная сводка соответствует ожидаемым значениям.&#10;&#10;Обратите внимание, что вам нужно заменить `250` и `550` в ожидаемых значениях для `:beginning_of_period` и `:end_of_period` на фактические ожидаемые значения, их можно рассчитать вручную на основе созданных событий.&#10;&#10;Убедитесь, что у вас есть фабрики `:income_event` и `:consumption_event` для создания событий дохода и расхода.&#10;&#10;Запустите тесты, чтобы убедиться, что сервис `UserSummaryService` работает правильно и возвращает ожидаемую сводку пользователя." />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1693813454266" />
+              <option name="usedFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/spec/factories/event.rb" />
+                  <option value="$PROJECT_DIR$/app/models/user.rb" />
+                  <option value="$PROJECT_DIR$/spec/factories/user.rb" />
+                  <option value="$PROJECT_DIR$/app/models/event.rb" />
+                  <option value="$PROJECT_DIR$/app/services/user_summary_service.rb" />
                 </list>
               </option>
             </ChatHistoryModel>
@@ -1530,6 +1595,7 @@
     <SUITE FILE_PATH="coverage/BalanceTask@EventCreationWorker_perform_with_wrong_params.rcov" NAME="EventCreationWorker#perform with wrong params Coverage Results" MODIFIED="1693754274121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BalanceTask" />
     <SUITE FILE_PATH="coverage/BalanceTask@Event.rcov" NAME="Event Coverage Results" MODIFIED="1693752406526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BalanceTask" />
     <SUITE FILE_PATH="coverage/BalanceTask@EventCreationService.rcov" NAME="EventCreationService Coverage Results" MODIFIED="1693760085017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BalanceTask" />
+    <SUITE FILE_PATH="coverage/BalanceTask@UserSummaryService.rcov" NAME="UserSummaryService Coverage Results" MODIFIED="1693814505493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BalanceTask" />
     <SUITE FILE_PATH="coverage/BalanceTask@Api__EventsController.rcov" NAME="Api::EventsController Coverage Results" MODIFIED="1693758410433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="BalanceTask" />
   </component>
 </project>
